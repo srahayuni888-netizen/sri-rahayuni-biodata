@@ -1,5 +1,8 @@
 # Website Biodata Diri — Sri Rahayuni
 
+**🌐 Situs online:** https://srahayuni888-netizen.github.io/sri-rahayuni-biodata/
+**📦 Repository:** https://github.com/srahayuni888-netizen/sri-rahayuni-biodata
+
 Website biodata diri satu halaman (static) yang berfungsi sebagai **pelengkap Curriculum Vitae (CV)**.
 Gaya: formal, profesional, dan mudah dibaca. Aksen warna berupa gradasi **abu-abu → pink muda** dengan
 paduan warna komplemen **teal/ hijau-keabuan** agar tetap menarik namun tetap serius.
@@ -28,6 +31,15 @@ Untuk mengunggah ke hosting (GitHub Pages / Netlify / cPanel):
 1. Unggah seluruh folder apa adanya.
 2. Untuk GitHub Pages: Settings → Pages → branch `main` → folder `/ (root)`.
 3. Untuk domain sendiri: arahkan DNS ke hosting, lalu unggah ke folder `public_html`.
+
+### Update website yang sudah online
+
+```bash
+git add -A
+git commit -m "Deskripsi perubahan"
+git push origin main
+```
+GitHub Pages otomatis membangun ulang situs dalam ±1 menit.
 
 ---
 
