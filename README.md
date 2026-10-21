@@ -16,10 +16,12 @@ Default Project/
 ├── index.html              # Halaman utama (semua isi/data ada di sini)
 ├── README.md
 └── assets/
+    ├── CV-Sri-Rahayuni.pdf  # File CV siap kirim (hasil cetak dari tampilan ini)
     ├── css/style.css       # Seluruh tampilan + gaya cetak (PDF)
     ├── js/main.js          # Interaksi: tema, menu, scroll spy, salin no. HP, form
     └── img/
-        ├── foto.svg        # Placeholder foto profil  ← GANTI dengan foto asli
+        ├── foto.jpg        # Foto profil  ← GANTI dengan foto Anda
+        ├── foto.svg        # Placeholder (dipakai jika foto.jpg hilang)
         └── favicon.svg
 ```
 
@@ -80,9 +82,9 @@ menjadi:
 
 ## Fitur
 
-- **Tombol "Unduh CV (PDF)"** — membuka dialog cetak; pilih *Save as PDF* untuk menghasilkan CV A4 rapi
-  (gaya cetak khusus sudah disiapkan: tombol/navigasi disembunyikan, tata letak disederhanakan).
-  Hasil cetak ± 4 halaman A4 berisi ringkasan profil, data pribadi, pendidikan, keahlian, proyek, dan kontak.
+- **Tombol "Unduh CV (PDF)"** — mengunduh file PDF siap kirim: `assets/CV-Sri-Rahayuni.pdf` (4 halaman A4).
+  Tersedia juga tautan **"cetak langsung dari browser"** yang membuka dialog cetak (pilih *Save as PDF*);
+  gaya `@media print` khusus sudah disiapkan agar hasilnya rapi.
 - **Tema terang & gelap** — tombol bulan/matahari di kanan atas, pilihan tersimpan di browser.
 - **Navigasi mulus** dengan penanda menu aktif (*scroll spy*) dan indikator progres scroll.
 - **Tombol salin nomor telepon**.
