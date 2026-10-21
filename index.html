@@ -54,10 +54,10 @@
         <svg class="ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         <svg class="ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
       </button>
-      <button class="btn btn-primary btn-sm no-print" type="button" data-print>
+      <a class="btn btn-primary btn-sm no-print" href="assets/CV-Sri-Rahayuni.pdf" download>
         <svg viewBox="0 0 24 24" aria-hidden="true" class="btn-ico"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
         <span>Unduh CV</span>
-      </button>
+      </a>
       <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span><span></span>
       </button>
@@ -86,9 +86,10 @@
         </p>
 
         <div class="hero-actions no-print">
-          <button class="btn btn-primary" type="button" data-print>Unduh CV (PDF)</button>
+          <a class="btn btn-primary" href="assets/CV-Sri-Rahayuni.pdf" download>Unduh CV (PDF)</a>
           <a class="btn btn-ghost" href="#kontak">Hubungi Saya</a>
         </div>
+        <p class="print-note no-print">atau <button class="link-btn" type="button" data-print>cetak langsung dari browser</button></p>
 
         <ul class="hero-chips">
           <li><span class="chip-ico"><svg><use href="#i-cap"></use></svg></span> Lulusan SMK Negeri Sukaresik</li>
@@ -483,7 +484,7 @@
         <p class="cta-text">Silakan unduh CV lengkap saya atau hubungi langsung melalui WhatsApp.</p>
       </div>
       <div class="cta-actions no-print">
-        <button class="btn btn-light" type="button" data-print>Unduh CV (PDF)</button>
+        <a class="btn btn-light" href="assets/CV-Sri-Rahayuni.pdf" download>Unduh CV (PDF)</a>
         <a class="btn btn-outline-light" href="https://wa.me/6283851089546" target="_blank" rel="noopener">Chat WhatsApp</a>
       </div>
     </div>
@@ -501,6 +502,7 @@
       <a href="#keahlian">Keahlian</a>
       <a href="#proyek">Proyek</a>
       <a href="#kontak">Kontak</a>
+      <button class="footer-print no-print" type="button" data-print>Cetak dari browser</button>
     </nav>
   </div>
 </footer>
