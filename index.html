@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sri Rahayuni — Biodata Diri & Curriculum Vitae</title>
+<meta name="description" content="Biodata diri Sri Rahayuni, lulusan SMK Negeri Sukaresik dengan keahlian konfigurasi Mikrotik. Website pelengkap Curriculum Vitae (CV).">
+<meta name="author" content="Sri Rahayuni">
+<meta name="theme-color" content="#2f2f38">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+
+<a class="skip-link" href="#profil">Lewati ke konten utama</a>
+
+<!-- ============ IKON SVG (sprite) ============ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M12 3 2.5 7.5 12 12l9.5-4.5L12 3z"/><path d="M6 9.8V15c0 1.7 2.7 3 6 3s6-1.3 6-3V9.8"/><path d="M21.5 7.5V14"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.7 2.7 2.7 15.3 0 18"/><path d="M12 3c-2.7 2.7-2.7 15.3 0 18"/></symbol>
+  <symbol id="i-cook" viewBox="0 0 24 24"><path d="M7 3v6a2 2 0 0 0 4 0V3"/><path d="M9 9v12"/><path d="M16 3c-1.6 2-2.2 4-2.2 6s.6 3 2.2 3 2.2-1 2.2-3-.6-4-2.2-6z"/><path d="M16 12v9"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M7 3h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 5 5.2 2 2 0 0 1 7 3z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><path d="M9 9h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V11a2 2 0 0 1 2-2z"/><path d="M5 15H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v1"/></symbol>
+</svg>
+
+<!-- ============ HEADER / NAVBAR ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#beranda" class="brand">
+      <span class="brand-mark">SR</span>
+      <span class="brand-text">
+        <strong>Sri Rahayuni</strong>
+        <small>Biodata &amp; Curriculum Vitae</small>
+      </span>
+    </a>
+
+    <nav class="nav" id="mainNav" aria-label="Navigasi utama">
+      <a href="#beranda" class="nav-link is-active">Beranda</a>
+      <a href="#profil" class="nav-link">Profil</a>
+      <a href="#pendidikan" class="nav-link">Pendidikan</a>
+      <a href="#keahlian" class="nav-link">Keahlian</a>
+      <a href="#proyek" class="nav-link">Proyek</a>
+      <a href="#kontak" class="nav-link">Kontak</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Ganti tema terang/gelap" title="Ganti tema">
+        <svg class="ico-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="ico-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+      </button>
+      <button class="btn btn-primary btn-sm no-print" type="button" data-print>
+        <svg viewBox="0 0 24 24" aria-hidden="true" class="btn-ico"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+        <span>Unduh CV</span>
+      </button>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="beranda">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+
+      <div class="hero-text">
+        <p class="eyebrow"><span class="dot"></span> Curriculum Vitae &amp; Biodata Diri</p>
+        <h1 class="hero-name">Sri Rahayuni</h1>
+        <p class="hero-role">Lulusan <strong>SMK Negeri Sukaresik</strong><br>Jurusan Rekayasa Jaringan Komputer</p>
+        <!-- EDIT: ganti kalimat di bawah dengan deskripsi singkat tentang diri Anda -->
+        <p class="hero-desc">
+          Berpengalaman dalam konfigurasi perangkat <strong>Mikrotik</strong> — mulai dari
+          setting router, DHCP server, VLAN, firewall, hingga troubleshooting jaringan
+          pada lingkungan rumah, sekolah, dan small office. Aktivitas favorit saya di
+          luar jam kerja adalah <strong>memasak</strong>.
+        </p>
+
+        <div class="hero-actions no-print">
+          <button class="btn btn-primary" type="button" data-print>Unduh CV (PDF)</button>
+          <a class="btn btn-ghost" href="#kontak">Hubungi Saya</a>
+        </div>
+
+        <ul class="hero-chips">
+          <li><span class="chip-ico"><svg><use href="#i-cap"></use></svg></span> Lulusan SMK Negeri Sukaresik</li>
+          <li><span class="chip-ico"><svg><use href="#i-globe"></use></svg></span> Konfigurasi Mikrotik</li>
+          <li><span class="chip-ico"><svg><use href="#i-cook"></use></svg></span> Hobi: Memasak</li>
+        </ul>
+      </div>
+
+      <aside class="hero-card" aria-label="Ringkasan profil">
+        <div class="photo-wrap">
+          <img src="assets/img/foto.jpg" alt="Foto profil Sri Rahayuni" id="fotoProfil"
+               onerror="this.src='assets/img/foto.svg'">
+          <span class="photo-badge">Tersedia untuk Magang &amp; Proyek</span>
+        </div>
+
+        <dl class="quick-facts">
+          <div><dt>Bahasa</dt><dd>Bahasa Indonesia</dd></div>
+          <div><dt>Keahlian Utama</dt><dd>Konfigurasi Mikrotik</dd></div>
+          <div><dt>Hobi</dt><dd>Memasak</dd></div>
+        </dl>
+
+        <div class="hero-card-actions no-print">
+          <a class="mini-btn" href="mailto:srahayuni888@gmail.com">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.5h18v11H3z"/><path d="m3 7 9 6 9-6"/></svg>
+            Email
+          </a>
+          <a class="mini-btn" href="https://wa.me/6283851089546" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.7 7.1L4 20l1.4-4.2A8 8 0 1 1 20 11.5z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ============ PROFIL / DATA DIRI ============ -->
+  <section class="section" id="profil">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-kicker">01 — Profil</p>
+        <h2 class="section-title">Biodata Diri</h2>
+        <p class="section-lead">Ringkasan data diri sebagai pelengkap Curriculum Vitae.</p>
+      </header>
+
+      <div class="grid-2">
+        <article class="card card-about">
+          <h3 class="card-title">Tentang Saya</h3>
+          <!-- EDIT: sesuaikan paragraf profil -->
+          <p>
+            Sri Rahayuni adalah lulusan SMK Negeri Sukaresik yang berfokus pada bidang
+            jaringan komputer, khususnya <strong>konfigurasi Mikrotik</strong>. Selama masa
+            sekolah, saya familiarize diri dengan konfigurasi router, DHCP server,
+            segmentasi VLAN, firewall, serta proses pencarian galat jaringan.
+          </p>
+          <p>
+            Saya merupakan pribadi yang teliti, pembelajar cepat, dan siap bekerja
+            dalam tim. Aktivitas <strong>memasak</strong> di luar jam belajar menjadi
+            tempat saya melatih ketelitian, kreativitas, serta kedisiplinan dalam
+            menjalankan proses dari awal sampai selesai.
+          </p>
+          <ul class="check-list">
+            <li>Konfigurasi Mikrotik RouterOS (Winbox &amp; Terminal)</li>
+            <li>Perencanaan struktur jaringan sederhana &amp; segmentasi VLAN</li>
+            <li>Troubleshooting konektivitas dan monitoring jaringan</li>
+            <li>Teliti, disiplin, dan siap bekerja dalam tim</li>
+          </ul>
+        </article>
+
+        <article class="card card-data">
+          <h3 class="card-title">Data Pribadi</h3>
+          <table class="data-table">
+            <caption class="sr-only">Tabel biodata diri Sri Rahayuni</caption>
+            <tbody>
+              <tr>
+                <th scope="row">Nama Lengkap</th>
+                <td><strong>Sri Rahayuni</strong></td>
+              </tr>
+              <tr>
+                <th scope="row">Tempat, Tanggal Lahir</th>
+                <!-- EDIT: ganti tempat lahir bila diperlukan -->
+                <td>Sukaresik, <strong>16 Juli 2008</strong></td>
+              </tr>
+              <tr>
+                <th scope="row">Jenis Kelamin</th>
+                <!-- EDIT: sesuaikan -->
+                <td>Perempuan</td>
+              </tr>
+              <tr>
+                <th scope="row">Agama</th>
+                <!-- EDIT: sesuaikan -->
+                <td>Islam</td>
+              </tr>
+              <tr>
+                <th scope="row">Pendidikan Terakhir</th>
+                <td>SMK Negeri Sukaresik</td>
+              </tr>
+              <tr>
+                <th scope="row">Jurusan</th>
+                <!-- EDIT: sesuaikan -->
+                <td>Rekayasa Jaringan Komputer</td>
+              </tr>
+              <tr>
+                <th scope="row">Status</th>
+                <!-- EDIT: sesuaikan -->
+                <td>Lulusan / Fresh Graduate</td>
+              </tr>
+              <tr>
+                <th scope="row">Alamat</th>
+                <!-- EDIT: isi alamat lengkap -->
+                <td>Jl. <span class="muted">[Alamat Lengkap Anda]</span></td>
+              </tr>
+              <tr>
+                <th scope="row">No. Telepon / WA</th>
+                <td><a href="https://wa.me/6283851089546" target="_blank" rel="noopener">0838-5108-9546</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Email</th>
+                <td><a href="mailto:srahayuni888@gmail.com">srahayuni888@gmail.com</a></td>
+              </tr>
+              <tr>
+                <th scope="row">Bahasa</th>
+                <!-- EDIT: sesuaikan -->
+                <td>Bahasa Indonesia (Native), Bahasa Inggris (Dasar)</td>
+              </tr>
+              <tr>
+                <th scope="row">Hobi</th>
+                <td>Memasak</td>
+              </tr>
+              <tr>
+                <th scope="row">Minat / Kekuatan</th>
+                <!-- EDIT: sesuaikan -->
+                <td>Jaringan komputer, konfigurasi Mikrotik, troubleshoot</td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+
+      <div class="grid-3">
+        <article class="card mini-card">
+          <span class="mini-ico"><svg><use href="#i-cap"></use></svg></span>
+          <h3 class="card-title sm">Latar Pendidikan</h3>
+          <p class="card-text">SMK Negeri Sukaresik, jurusan Rekayasa Jaringan Komputer — dasar-dasar jaringan, konfigurasi Mikrotik, dan perakitan kabel.</p>
+        </article>
+        <article class="card mini-card">
+          <span class="mini-ico"><svg><use href="#i-globe"></use></svg></span>
+          <h3 class="card-title sm">Keahlian Teknis</h3>
+          <p class="card-text">Konfigurasi Mikrotik, routing, firewall, DHCP, VLAN, topologi jaringan, serta troubleshooting konektivitas.</p>
+        </article>
+        <article class="card mini-card">
+          <span class="mini-ico"><svg><use href="#i-cook"></use></svg></span>
+          <h3 class="card-title sm">Hobi &amp; Minat</h3>
+          <p class="card-text">Memasak — melatih ketelitian, kreativitas, dan kedisiplinan. Tertarik pada dunia jaringan &amp; teknologi.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PENDIDIKAN ============ -->
+  <section class="section section-alt" id="pendidikan">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-kicker">02 — Pendidikan</p>
+        <h2 class="section-title">Riwayat Pendidikan</h2>
+        <p class="section-lead">Jenjang pendidikan formal yang telah dilalui beserta mata pelajaran utama di tiap tingkat.</p>
+      </header>
+
+      <div class="timeline">
+        <article class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-card card">
+            <span class="tl-year">2023 — 2026</span>
+            <h3 class="card-title">SMK Negeri Sukaresik</h3>
+            <p class="tl-major">Jurusan Rekayasa Jaringan Komputer</p>
+            <ul class="bullet-list">
+              <li>Pelajaran konfigurasi jaringan, Mikrotik, dan administrasi sistem</li>
+              <li>Perakitan dan pengujian kabel jaringan (crimping)</li>
+              <li>Perancangan topologi jaringan sederhana</li>
+              <li>Praktik konfigurasi router, DHCP, VLAN, dan firewall</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="tl-item reveal">
+          <span class="tl-dot"></span>
+          <div class="tl-card card">
+            <span class="tl-year">2019 — 2023</span>
+            <h3 class="card-title">SMP Negeri Sukaresik</h3>
+            <!-- EDIT: ganti nama SMP bila berbeda -->
+            <p class="tl-major">Pendidikan Menengah Pertama</p>
+            <ul class="bullet-list">
+              <li>Dasar-dasar komputer dan pengenalan jaringan</li>
+              <li>Praktik assembling serta pengenalan sistem operasi</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KEAHLIAN ============ -->
+  <section class="section" id="keahlian">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-kicker">03 — Keahlian</p>
+        <h2 class="section-title">Kemampuan &amp; Keahlian</h2>
+        <p class="section-lead">Kekuatan utama pada bidang konfigurasi Mikrotik dan administrasi jaringan.</p>
+      </header>
+
+      <div class="grid-2 skills-grid">
+        <article class="card skill-card">
+          <h3 class="card-title">Keahlian Teknis</h3>
+          <ul class="skill-list">
+            <li>
+              <div class="skill-head"><span>Konfigurasi Mikrotik (RouterOS)</span><b>92%</b></div>
+              <div class="bar"><i style="--w:92%"></i></div>
+            </li>
+            <li>
+              <div class="skill-head"><span>Routing &amp; Switching</span><b>85%</b></div>
+              <div class="bar"><i style="--w:85%"></i></div>
+            </li>
+            <li>
+              <div class="skill-head"><span>Firewall &amp; NAT</span><b>80%</b></div>
+              <div class="bar"><i style="--w:80%"></i></div>
+            </li>
+            <li>
+              <div class="skill-head"><span>DHCP, VLAN &amp; Static Routing</span><b>82%</b></div>
+              <div class="bar"><i style="--w:82%"></i></div>
+            </li>
+            <li>
+              <div class="skill-head"><span>Troubleshooting Jaringan</span><b>85%</b></div>
+              <div class="bar"><i style="--w:85%"></i></div>
+            </li>
+            <li>
+              <div class="skill-head"><span>Dasar-dasar Jaringan Komputer</span><b>90%</b></div>
+              <div class="bar"><i style="--w:90%"></i></div>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card skill-card">
+          <h3 class="card-title">Perangkat Lunak &amp; Alat Kerja</h3>
+          <ul class="tool-list">
+            <li><span>MikroTik RouterOS</span><em>Winbox</em></li>
+            <li><span>MikroTik RouterOS</span><em>Terminal / CLI</em></li>
+            <li><span>Topologi Jaringan</span><em>Cisco Packet Tracer</em></li>
+            <li><span>Pengujian Konektivitas</span><em>Ping, Traceroute, NSLOOKUP</em></li>
+            <li><span>Administrasi</span><em>Command Prompt, IP Address</em></li>
+            <li><span>Perakitan Kabel</span><em>Crimping RJ45</em></li>
+          </ul>
+
+          <h3 class="card-title mt">Soft Skill</h3>
+          <div class="pill-wrap">
+            <span class="pill">Teliti</span>
+            <span class="pill">Disiplin</span>
+            <span class="pill">Problem Solving</span>
+            <span class="pill">Kerja Sama</span>
+            <span class="pill">Kreativitas</span>
+            <span class="pill">Pembelajar Cepat</span>
+          </div>
+        </article>
+      </div>
+
+      <article class="card cert-card">
+        <h3 class="card-title">Sertifikasi &amp; Kursus</h3>
+        <!-- EDIT: ganti dengan sertifikat/kursus yang dimiliki -->
+        <ul class="bullet-list two-col">
+          <li>Sertifikat Mikrotik — <span class="muted">[Nama Sertifikat &amp; Institusi]</span></li>
+          <li>Kursus Jaringan Komputer — <span class="muted">[Nama Kursus &amp; Platform]</span></li>
+          <li>Pelatihan Keamanan Siber — <span class="muted">[Opsional]</span></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PROYEK / PENGALAMAN ============ -->
+  <section class="section section-alt" id="proyek">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-kicker">04 — Proyek &amp; Pengalaman</p>
+        <h2 class="section-title">Proyek Praktik &amp; Pengalaman</h2>
+        <p class="section-lead">Contoh aktivitas — ganti dengan pengalaman nyata Anda.</p>
+      </header>
+
+      <div class="grid-3">
+        <article class="card project-card reveal">
+          <span class="proj-no">01</span>
+          <h3 class="card-title sm">Konfigurasi Router Mikrotik</h3>
+          <p class="card-text">Pengaturan alamat IP, DHCP server, routing statis, firewall, dan NAT pada RouterOS untuk jaringan lokal rumah dan sekolah.</p>
+          <div class="tag-row">
+            <span class="tag">RouterOS</span><span class="tag">DHCP</span><span class="tag">Firewall</span>
+          </div>
+        </article>
+
+        <article class="card project-card reveal">
+          <span class="proj-no">02</span>
+          <h3 class="card-title sm">Segmentasi Jaringan VLAN</h3>
+          <p class="card-text">Pembagian jaringan menjadi beberapa VLAN berdasarkan fungsi pengguna dengan konfigurasi bridge VLAN pada MikroTik.</p>
+          <div class="tag-row">
+            <span class="tag">VLAN</span><span class="tag">Bridge</span><span class="tag">Topologi</span>
+          </div>
+        </article>
+
+        <article class="card project-card reveal">
+          <span class="proj-no">03</span>
+          <h3 class="card-title sm">Monitoring &amp; Troubleshooting</h3>
+          <p class="card-text">Pendiagnosaan masalah konektivitas menggunakan ping, traceroute, dan pencatatan log RouterOS untuk menemukan penyebab gangguan.</p>
+          <div class="tag-row">
+            <span class="tag">Ping</span><span class="tag">Traceroute</span><span class="tag">Log</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ KONTAK ============ -->
+  <section class="section" id="kontak">
+    <div class="container">
+      <header class="section-head">
+        <p class="section-kicker">05 — Kontak</p>
+        <h2 class="section-title">Hubungi Saya</h2>
+        <p class="section-lead">Silakan hubungi saya untuk informasi lebih lanjut, bekerja sama, atau peluang karier.</p>
+      </header>
+
+      <div class="grid-2">
+        <div class="contact-cards">
+          <a class="card contact-card" href="mailto:srahayuni888@gmail.com">
+            <span class="mini-ico"><svg><use href="#i-mail"></use></svg></span>
+            <div>
+              <h3 class="card-title sm">Email</h3>
+              <p class="card-text">srahayuni888@gmail.com</p>
+            </div>
+            <span class="go">→</span>
+          </a>
+
+          <a class="card contact-card" href="https://wa.me/6283851089546" target="_blank" rel="noopener">
+            <span class="mini-ico"><svg><use href="#i-phone"></use></svg></span>
+            <div>
+              <h3 class="card-title sm">WhatsApp / Telepon</h3>
+              <p class="card-text">0838-5108-9546</p>
+            </div>
+            <span class="go">→</span>
+          </a>
+
+          <div class="card contact-card">
+            <span class="mini-ico"><svg><use href="#i-pin"></use></svg></span>
+            <div>
+              <h3 class="card-title sm">Domisili</h3>
+              <!-- EDIT: isi alamat lengkap -->
+              <p class="card-text">Sukaresik, Sukabumi, Jawa Barat</p>
+            </div>
+          </div>
+
+          <button class="card contact-card as-button" type="button" id="copyPhone" data-copy="0838-5108-9546">
+            <span class="mini-ico"><svg><use href="#i-copy"></use></svg></span>
+            <div>
+              <h3 class="card-title sm">Salin Nomor</h3>
+              <p class="card-text" id="copyLabel">Klik untuk menyalin nomor telepon</p>
+            </div>
+          </button>
+        </div>
+
+        <article class="card contact-form-card no-print">
+          <h3 class="card-title">Kirim Pesan</h3>
+          <p class="card-text mb">Pesan akan langsung dibuka di aplikasi email Anda.</p>
+          <form id="contactForm" class="form">
+            <label class="field">
+              <span>Nama</span>
+              <input type="text" name="nama" placeholder="Nama Anda" required>
+            </label>
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="email@example.com" required>
+            </label>
+            <label class="field">
+              <span>Pesan</span>
+              <textarea name="pesan" rows="5" placeholder="Tulis pesan Anda…" required></textarea>
+            </label>
+            <button class="btn btn-primary btn-block" type="submit">Kirim via Email</button>
+          </form>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA / UNDUH ============ -->
+  <section class="cta">
+    <div class="container cta-inner">
+      <div>
+        <h2 class="cta-title">Tertarik untuk bekerja sama?</h2>
+        <p class="cta-text">Silakan unduh CV lengkap saya atau hubungi langsung melalui WhatsApp.</p>
+      </div>
+      <div class="cta-actions no-print">
+        <button class="btn btn-light" type="button" data-print>Unduh CV (PDF)</button>
+        <a class="btn btn-outline-light" href="https://wa.me/6283851089546" target="_blank" rel="noopener">Chat WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p class="footer-brand">© <span id="tahun">2026</span> <strong>Sri Rahayuni</strong> — Website Biodata Diri &amp; Pelengkap CV.</p>
+    <nav class="footer-nav" aria-label="Navigasi footer">
+      <a href="#profil">Profil</a>
+      <a href="#pendidikan">Pendidikan</a>
+      <a href="#keahlian">Keahlian</a>
+      <a href="#proyek">Proyek</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </div>
+</footer>
+
+<button class="to-top no-print" id="toTop" type="button" aria-label="Kembali ke atas">↑</button>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
